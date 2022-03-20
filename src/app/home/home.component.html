@@ -1,0 +1,16 @@
+<h1>composant home</h1>>
+{{nom}}
+<h2 align="center">les etudiants</h2>
+<ul>
+  <li *ngFor="let  topic of etudiants">{{topic|uppercase}}</li>
+
+</ul>
+<table class="table">
+  <tr><th>Id User </th><th>Id Post</th><th>Title</th><th>Body</th></tr>
+  <tr *ngFor="let post of mesPosts">
+  <td>{{post.userId}}</td>
+  <td>{{post.id}}</td>
+  <td>{{post.title}}</td>
+  <td>{{post.body}}</td>
+</tr>
+</table>
